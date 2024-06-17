@@ -1,0 +1,11 @@
+ERROR: Unable to locate a modulefile for 'python/3.8.0'
+Collecting scikit-learn
+  Downloading scikit_learn-0.24.2-cp36-cp36m-manylinux2010_x86_64.whl (22.2 MB)
+Requirement already satisfied: numpy>=1.13.3 in /shared/home/hpcadmin/.local/lib/python3.6/site-packages (from scikit-learn) (1.19.5)
+Collecting scipy>=0.19.1
+  Downloading scipy-1.5.4-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+Requirement already satisfied: joblib>=0.11 in /shared/home/hpcadmin/.local/lib/python3.6/site-packages (from scikit-learn) (1.1.1)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Installing collected packages: threadpoolctl, scipy, scikit-learn
+Successfully installed scikit-learn-0.24.2 scipy-1.5.4 threadpoolctl-3.1.0

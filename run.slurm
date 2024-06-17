@@ -6,16 +6,9 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=01:00:00
-#SBATCH --partition=standard
-#SBATCH --account=your_account
+#SBATCH --partition=gpu
 
-module load python/3.7.4
-module load pytorch/1.2.0
+#module load python/3.8.0
+pip install --user scikit-learn
 
-# Activate your Python environment, if you have one
-# source activate myenv
-
-# Install necessary libraries
-pip install --user -r requirements.txt
-
-srun python run.py
+python train_model.py
